@@ -1,63 +1,348 @@
 @import url('https://fonts.googleapis.com/css2?family=Suwannaphum:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suwannaphum:wght@700&display=swap');
 
 /* font-family: 'Suwannaphum', serif; */
 /* font-family: 'Poppins', sans-serif; */
 
 :root {
-    --main-color:#1B273D;
-    --light-green:#007B80;
-    --purple-color:#3D246C
+  --main-color: #1B273D;
+  --light-green: #007B80;
+  --purple-color: #3D246C;
+  --fontSecondary: 'Suwannaphum', serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration:none;
-    color: #fff !important;
+  text-decoration: none;
+  color: #fff !important;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-body{
-    padding: 0px;
-    margin: 0px;
+ul {
+  list-style: none;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
 /* start header style */
 
 header {
-    background:var(--main-color);
-    
+  background: var(--main-color);
+
 }
 
 nav {
-    color: #fff !important;
+  color: #fff !important;
 }
 
-header .log-in {
-    background: var(--light-green);
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin: 0 10px;
-    border: 1px solid var(--light-green);
+.log-in {
+  background: var(--light-green);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+  border: 1px solid var(--light-green);
 }
 
 
-header .sign-up {
-    border: 1px solid #fff;
-    padding: 10px 18px;
-    border-radius: 10px;
+.sign-up {
+  border: 1px solid #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
 }
 
-header .log-in:hover{
-    background:#13b0b6;
+.section-hero.sign-up {}
+
+.log-in:hover {
+  background: #13b0b6;
 }
 
-/* .navbar-toggler {
-    background:#fff
-} */
+.section-hero {
+  background-color: var(--main-color);
+  padding-top: 5%;
+  padding-bottom: 8%;
+  display: flex;
+
+}
+
+.hero-content {}
+
+.hero-content h2 {
+  font-size: 72px;
+  font-family: 'Suwannaphum', serif;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5%;
+}
+
+.hero-content p {
+  font-size: 22px;
+  color: #fff;
+  font-family: 'Poppins';
+  margin-bottom: 5%;
+}
+
+.hero-content .log-in,
+.hero-content .sign-up {
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0 10px 0 0;
+  font-size: 18px;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+.section-brand {
+  margin-top: 2%;
+}
+
+.section-service {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+
+.section-service .head_title h3 {
+  font-size: 60px;
+  color: var(--main-color);
+  margin-bottom: 2%;
+  font-family: var(--fontSecondary);
+  font-weight: 700;
+}
+
+.section-service .head_title p {
+  color: #65606D;
+  font-size: 18px;
+  font-family: 'Poppins';
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+.service_item {
+  display: flex;
+}
+
+.service_item .single_service {
+  border-radius: 8px;
+  padding: 2% 1%;
+  /* width: 23%; */
+  background-color: #fff;
+  box-shadow: 0 0 30px rgb(248, 248, 248);
+  border: 0.8px solid #efefef;
+  transition: all .4s ease;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_item .single_service:hover {
+  transform: scale(1.05);
+  color: #fff;
+  background-color: var(--light-green);
+}
+
+.service_item .single_service:hover p {
+  color: #fff;
+}
+
+.service_item .single_service h4 {
+  font-size: 30px;
+  font-family: var(--fontSecondary);
+}
+
+.service_item .single_service p {
+  color: #65606D;
+  font-family: 'Poppins';
+  font-size: 16px;
+}
+
+.section-provided {
+  margin: 2% 0;
+  align-items: center;
+}
+
+.content-provided h3 {
+  font-size: 60px;
+  font-family: var(--fontSecondary);
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.content-provided p {
+  margin-top: 5%;
+  color: #65606D;
+}
+
+.provided-box {
+  align-items: center;
+}
+
+/* section-slider */
+
+.section-slider {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 5% 0;
+}
+
+.head_title {
+  color: #fff;
+}
+
+
+.head_title h3 {
+  font-family: var(--fontSecondary);
+  font-size: 60px;
+}
+
+.head_title p {
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto 2% auto;
+}
+
+.slider_card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.single_slider {
+  border-radius: 10px;
+
+  background-color: #fff;
+  width: 32%;
+  padding: 2%;
+}
+
+.slider_img {
+  margin-bottom: 2%;
+}
+
+.slider_img img {
+  border-radius: 8px;
+}
+
+.slider_contact {}
+
+.slider_contact p {
+  color: #65606D;
+  font-size: 16px;
+}
+
+.slider_contact {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  width: 100%;
+}
+
+.contact_img {
+  display: flex;
+  height: 55px;
+  width: 55%;
+}
+
+.contact_name {
+  text-align: start;
+  margin-left: 3%;
+}
+
+.slider_content {
+  text-align: start;
+}
+
+.slider_content a:first-child {
+  color: var(--main-color) !important;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.slider_contact a {
+  background-color: var(--light-green);
+  color: #fff;
+  padding: 0.4rem 7%;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.section-service .more-services {
+  padding: 0.8rem 3%;
+  background-color: var(--light-green);
+  width: 15%;
+  margin: 2% auto 0 auto;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+footer {
+  background-color: var(--main-color);
+  padding: 3% 0;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.logo p {
+  color: #fff;
+  font-size: 25px;
+  margin-top: 3%;
+}
+
+.social_icon {
+  color: #fff;
+  font-size: 25px;
+  display: flex;
+}
+
+.social_icon .icons {
+  /* padding: 3% 5%; */
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: var(--light-green);
+  text-align: center;
+  margin-left: 2%;
+}
+
+.social_icon i {
+  line-height: 45px;
+}
+
+.links {
+  color: #fff;
+}
+
+.links h4 {
+  font-size: 35px;
+  font-family: var(--fontSecondary);
+}
+
+
+.links ul {
+  color: #fff;
+  padding-left: 0;
+}
+
+.links ul li {
+  margin: 5% 0;
+  font-size: 20px;
+}
